@@ -1,0 +1,9 @@
+// Make TS Class usage safer
+var Library = /** @class */ (function () {
+    function Library() {
+        // this.titles = []
+    }
+    return Library;
+}());
+var library = new Library();
+var shortTitles = library.titles.filter(function (title) { return title.length < 5; });
